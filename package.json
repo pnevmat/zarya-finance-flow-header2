@@ -1,0 +1,29 @@
+{
+  "name": "zarya-finance-flow-header2",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/*.html",
+  "homepage": "https://github.com/pnevmat",
+  "scripts": {
+    "start": "node init && parcel",
+    "build": "node init && parcel build",
+    "predeploy": "npm run build -- --public-url=/pnevmat/",
+    "deploy": "netlify deploy -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnevmat/zarya-finance-flow-header2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnevmat/zarya-finance-flow-header2/issues"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.14.0",
+    "posthtml-include": "^2.0.1",
+    "sass": "^1.101.0"
+  }
+}
